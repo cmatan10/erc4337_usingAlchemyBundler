@@ -58,7 +58,6 @@ async function main() {
 
     const opHash = await hre.ethers.provider.send('eth_sendUserOperation',[userOp, entryPointAddress])
     console.log(opHash);
-
 }
 
 // We recommend this pattern to be able to use async/await everywhere
