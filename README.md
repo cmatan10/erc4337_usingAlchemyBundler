@@ -38,7 +38,7 @@ This script deploys the ExampleContract, a simple ERC721 token contract. This co
 `npx hardhat run --network mumbai ./scripts/deploy_ExampleContract.js`
 
 ### 5. Deposit Funds
-This script is responsible for funding the necessary accounts to enable User Operations. It deposits funds into the EntryPoint contract for the Paymaster. This ensures that the Paymaster has sufficient balance to cover transaction fees for wallets created from the specified AccountFactory.
+This script ensures that the Paymaster has sufficient balance to cover transaction fees for wallets created from the specified AccountFactory.
 
 `npx hardhat run --network mumbai ./scripts/depositFunds.js`
 
