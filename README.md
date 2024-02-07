@@ -23,7 +23,7 @@ This script deploys the AccountFactory contract. The AccountFactory is responsib
 `npx hardhat run --network mumbai ./scripts/deploy_AccountFactory.js`
 
 ### 2. Deploy the Paymaster
-This script deploys the Paymaster contract, which covers transaction fees for SimpleAccounts. The Alchemy EntryPoint address is passed as a parameters to the Paymaster.
+This script deploys the Paymaster contract, which covers transaction fees for SimpleAccounts. The Alchemy EntryPoint address is passed as a parameter to the Paymaster.
 
 `npx hardhat run --network mumbai ./scripts/deploy_Paymaster.js`
 
