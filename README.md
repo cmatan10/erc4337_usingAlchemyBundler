@@ -2,7 +2,7 @@
 
 ## Overview
 This repository showcases a practical implementation of ERC4337, a standard for smart contract-based accounts, by demonstrating a complete workflow for minting an ERC721 token. The project involves setting up a smart contract environment on the Mumbai test network and executing user operations. Key components include:
-- **EntryPoint**: Manages user operations - created by Alchemy.
+- **EntryPoint**: Manages user operations - created by Alchemy (0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789).
 - **AccountFactory**: Responsible for creating new accounts.
 - **Paymaster**: Transactions sponsor for SimpleAccounts.
 - **SimpleAccount**: A basic account structure for users.
