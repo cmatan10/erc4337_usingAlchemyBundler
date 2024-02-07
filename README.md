@@ -55,7 +55,7 @@ The transaction is sponsored by the Paymaster, which covers the transaction fees
 
 ## Configuration
 - `hardhat.config.js`: [View File](https://github.com/cmatan10/erc4337-example/blob/main/hardhat.config.js)
-- `erc4337Config.js`: [View File](https://github.com/cmatan10/erc4337-example/blob/main/erc4337Config.js)
+- `erc4337Config.js`: [View File](https://github.com/cmatan10/erc4337_usingAlchemyBundler/blob/main/erc4337Config.js)
 
 ### NOTE: 
 If you encounter this err:
