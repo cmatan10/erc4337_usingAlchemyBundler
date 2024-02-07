@@ -1,8 +1,8 @@
-# ERC4337 Example Project
+# Full implementation of ERC 4337 using Alchemy bundler
 
 ## Overview
 This repository showcases a practical implementation of ERC4337, a standard for smart contract-based accounts, by demonstrating a complete workflow for minting an ERC721 token. The project involves setting up a smart contract environment on the Mumbai test network and executing user operations. Key components include:
-- **EntryPoint**: Manages user operations - created by alchemy.
+- **EntryPoint**: Manages user operations - created by Alchemy.
 - **AccountFactory**: Responsible for creating new accounts.
 - **Paymaster**: Transactions sponsor for SimpleAccounts.
 - **SimpleAccount**: A basic account structure for users.
@@ -12,7 +12,7 @@ This repository showcases a practical implementation of ERC4337, a standard for 
 - Install the dependence with the command `npm install`.
 - Ensure the `.env` file is updated based on the provided `.env.example`. It should include:
   - A private key with sufficient Mumbai MATIC to deploy the contracts and fund the wallet for user operations.
-  - A Mumbai RPC URL- must used alchemy rpc for this exam.
+  - A Mumbai RPC URL- must used Alchemy rpc for this exam.
 
 ## Deployment and Execution Steps
 Follow these steps in order to deploy contracts and execute transactions:
