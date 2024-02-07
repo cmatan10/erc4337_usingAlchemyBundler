@@ -1,6 +1,6 @@
 const hre = require("hardhat");
 
-const { exampleContractAddress, simpleAccountAddress } = require('../addressesConfig');
+const { exampleContractAddress, simpleAccountAddress } = require('../erc4337Config');
 
 async function main() {
 

@@ -1,6 +1,7 @@
 const Web3 = require('web3');
 const https = process.env.PROVIDER;
 const web3 = new Web3(https);
+const { priorityFee } = require('../../erc4337Config');
 
 require('dotenv').config();
 
@@ -24,7 +25,7 @@ async function FeePerGas() {
     return Math.round(sum/arr.length);
   }
   
-  const feeHistory = await web3.eth.getFeeHistory(20, "pending", [55]);
+  const feeHistory = await web3.eth.getFeeHistory(20, "pending", [priorityFee]);
  
   const blocks = formatFeeHistory(feeHistory);
   const average = avg(blocks.map(b => b.priorityFeePerGas[0]));

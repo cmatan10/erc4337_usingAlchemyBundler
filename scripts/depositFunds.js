@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 require('dotenv').config();
 
-const { entryPointAddress, paymasterAddress } = require('../addressesConfig');
+const { entryPointAddress, paymasterAddress } = require('../erc4337Config');
 
 async function main() {
 
@@ -14,7 +14,7 @@ async function main() {
     const entryPoint = await hre.ethers.getContractAt("EntryPoint", entryPointAddress, signer);
 
     const sendFunds = await entryPoint.depositTo(paymasterAddress, {
-        value: hre.ethers.parseUnits("50000000", "gwei"),
+        value: hre.ethers.parseUnits("20000000", "gwei"),
     });
     const receipt1 = await sendFunds.wait();
     console.log(receipt1);

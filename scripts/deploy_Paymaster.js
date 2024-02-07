@@ -1,7 +1,7 @@
 
 const hre = require("hardhat");
-const { entryPointAddress, accountFactoryAddress } = require('../addressesConfig');
-const { updateAddressesConfig } = require('./helpers/updateAddressesConfig');
+const { entryPointAddress } = require('../erc4337Config');
+const { updateErc4337Config } = require('./helpers/updateErc4337Config');
 
 async function main() {
 
@@ -13,7 +13,7 @@ async function main() {
     `Paymaster deployed to ${Paymaster.target}`
   );
 
-  updateAddressesConfig('paymasterAddress', Paymaster.target);
+  updateErc4337Config('paymasterAddress', Paymaster.target);
 }
 
 main().catch((error) => {

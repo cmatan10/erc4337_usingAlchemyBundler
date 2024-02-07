@@ -1,6 +1,6 @@
 
 const hre = require("hardhat");
-const { updateAddressesConfig } = require('./helpers/updateAddressesConfig');
+const { updateErc4337Config } = require('./helpers/updateErc4337Config');
 
 async function main() {
 
@@ -12,7 +12,7 @@ async function main() {
     `example contract deployed to ${exampleContract.target}`
   );
 
-  updateAddressesConfig('exampleContractAddress', exampleContract.target);
+  updateErc4337Config('exampleContractAddress', exampleContract.target);
 }
 
 main().catch((error) => {

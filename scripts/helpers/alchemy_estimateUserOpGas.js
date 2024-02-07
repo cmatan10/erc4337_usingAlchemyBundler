@@ -5,7 +5,7 @@ const { eoaPublicKey,
         entryPointAddress, 
         exampleContractAddress, 
         accountFactoryAddress, 
-        paymasterAddress } = require('../../addressesConfig');
+        paymasterAddress } = require('../../erc4337Config');
 const { FeePerGas } = require('./gasEstimator');
 
 async function estimateUserOpGas() {

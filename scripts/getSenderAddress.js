@@ -1,7 +1,7 @@
 const hre = require("hardhat");
-const { accountFactoryAddress, entryPointAddress } = require('../addressesConfig');
+const { accountFactoryAddress, entryPointAddress } = require('../erc4337Config');
 const { createEOA } = require('./helpers/createEoaWallet');
-const { updateAddressesConfig } = require('./helpers/updateAddressesConfig');
+const { updateErc4337Config } = require('./helpers/updateErc4337Config');
 
 async function main() {
 
@@ -21,9 +21,9 @@ async function main() {
   }
   console.log('simpleAccountAddress:', simpleAccountAddress);
 
-  updateAddressesConfig('eoaPublicKey', EOA[0]);
-  updateAddressesConfig('eoaPrivateKey', EOA[1]);
-  updateAddressesConfig('simpleAccountAddress', simpleAccountAddress);
+  updateErc4337Config('eoaPublicKey', EOA[0]);
+  updateErc4337Config('eoaPrivateKey', EOA[1]);
+  updateErc4337Config('simpleAccountAddress', simpleAccountAddress);
 }
 
 main().catch((error) => {

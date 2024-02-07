@@ -1,6 +1,6 @@
 const hre = require("hardhat");
-const { entryPointAddress } = require('../addressesConfig');
-const { updateAddressesConfig } = require('./helpers/updateAddressesConfig');
+const { entryPointAddress } = require('../erc4337Config');
+const { updateErc4337Config } = require('./helpers/updateErc4337Config');
 
 async function main() {
 
@@ -12,7 +12,7 @@ async function main() {
     `AccountFactory deployed to ${AccountFactory.target}` 
   );
 
-  updateAddressesConfig('accountFactoryAddress', AccountFactory.target);
+  updateErc4337Config('accountFactoryAddress', AccountFactory.target);
 }
 
 main().catch((error) => {

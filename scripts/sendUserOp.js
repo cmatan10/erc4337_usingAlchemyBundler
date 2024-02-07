@@ -7,7 +7,7 @@ const { eoaPublicKey,
         entryPointAddress, 
         exampleContractAddress, 
         accountFactoryAddress, 
-        paymasterAddress } = require('../addressesConfig');
+        paymasterAddress } = require('../erc4337Config');
 
 async function main() {
 
