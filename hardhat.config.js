@@ -3,7 +3,7 @@ require('dotenv').config()
 
 module.exports = {
   solidity: {
-    version: "0.8.22"
+    version: "0.8.23"
     ,
     settings: {
       evmVersion: 'shanghai',
@@ -17,10 +17,10 @@ module.exports = {
       hardhat: {
           chainId: 31337
       },
-      mumbai: {
+      amoy: {
           url: `${process.env.PROVIDER}`,
           accounts: [process.env.PRI_KEY],
-          chainId: 80001,
+          chainId: 80002,
       },    
   },
 
